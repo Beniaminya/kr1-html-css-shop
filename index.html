@@ -1,81 +1,200 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог товаров</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зелёный дом — учебный интернет-магазин комнатных растений.">
+    <title>Зелёный дом — комнатные растения</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
-  <body>
-    <header>
-      <div class="site-header">
-        <a class="site-logo" href="index.html">ShopProject</a>
-
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Зелёный дом</a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#popular">Популярные товары</a></li>
-            <li><a href="#advantages">Преимущества</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">Товар</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-
     <main>
       <section class="hero">
-        <h1>Учебный интернет-магазин</h1>
-        <p>
-          Это стартовая страница учебного frontend-проекта. В дальнейшем на её
-          основе будет разработан многостраничный сайт интернет-магазина или
-          каталога услуг.
-        </p>
-        <a class="button" href="#popular">Перейти к товарам</a>
+        <p class="hero__label">Комнатные растения для дома</p>
+        <h1 class="hero__title">Добавьте немного зелени в интерьер</h1>
+        <p class="hero__text">Выбирайте неприхотливые растения в горшках. Подскажем, какой вариант подойдёт для вашей комнаты.</p>
+        <div class="hero__actions">
+          <a class="button" href="catalog.html">Открыть каталог</a>
+          <a class="button button--secondary" href="#advantages">Наши преимущества</a>
+        </div>
       </section>
       <section class="section" id="advantages">
-        <h2>Преимущества проекта</h2>
-
-        <ul class="advantages-list">
-          <li>понятная HTML-структура;</li>
-          <li>семантические блоки страницы;</li>
-          <li>подключение внешнего CSS-файла;</li>
-          <li>подготовка к разработке многостраничного сайта.</li>
+        <h2 class="section__title">Почему выбирают нас</h2>
+        <ul class="advantages">
+          <li class="advantages__item">
+            <h3>Здоровые растения</h3>
+            <p>Перед продажей мы проверяем листья, корни и состояние грунта.</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Простой уход</h3>
+            <p>К каждому растению прилагается короткая памятка по уходу.</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Доставка по Москве</h3>
+            <p>Бережно упаковываем заказ и доставляем его в течение двух дней.</p>
+          </li>
         </ul>
       </section>
-
       <section class="section" id="popular">
-        <h2>Популярные товары</h2>
-
-        <article class="product-card">
-          <h3>Товар 1</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 1000 руб.</p>
-        </article>
-
-        <article class="product-card">
-          <h3>Товар 2</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 1500 руб.</p>
-        </article>
-
-        <article class="product-card">
-          <h3>Товар 3</h3>
-          <p>Краткое описание учебного товара.</p>
-          <p>Цена: 2000 руб.</p>
-        </article>
+        <div class="section__heading">
+          <div>
+            <p class="section__label">Популярное</p>
+            <h2 class="section__title">Растения для начала</h2>
+          </div>
+          <a href="catalog.html">Смотреть весь каталог</a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-card--hit">
+            <span class="product-card__badge">Хит</span>
+            <img class="product-card__image" src="images/monstera.jpg" alt="Монстера в бежевом горшке">
+            <div class="product-card__content">
+              <p class="product-card__category">Крупные растения</p>
+              <h3 class="product-card__title">Монстера</h3>
+              <p class="product-card__description">Растение с крупными резными листьями для светлой комнаты.</p>
+              <p class="product-card__price">2 400 руб.</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product.html">Подробнее</a>
+                <button class="button product-card__button js-open-dialog" type="button" data-product="Монстера">Заказать</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge">Новинка</span>
+            <img class="product-card__image" src="images/ficus.jpg" alt="Фикус в терракотовом горшке">
+            <div class="product-card__content">
+              <p class="product-card__category">Декоративно-лиственные</p>
+              <h3 class="product-card__title">Фикус</h3>
+              <p class="product-card__description">Компактное растение с плотными тёмно-зелёными листьями.</p>
+              <p class="product-card__price">1 800 руб.</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product.html">Подробнее</a>
+                <button class="button product-card__button js-open-dialog" type="button" data-product="Фикус">Заказать</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <img class="product-card__image" src="images/sansevieria.jpg" alt="Сансевиерия в светлом горшке">
+            <div class="product-card__content">
+              <p class="product-card__category">Неприхотливые</p>
+              <h3 class="product-card__title">Сансевиерия</h3>
+              <p class="product-card__description">Выносливое растение, которое не требует частого полива.</p>
+              <p class="product-card__price">1 500 руб.</p>
+              <div class="product-card__actions">
+                <a class="button button--secondary" href="product.html">Подробнее</a>
+                <button class="button product-card__button js-open-dialog" type="button" data-product="Сансевиерия">Заказать</button>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
-      <aside class="aside-info">
-        <h2>Информация для студентов</h2>
-        <p>
-          На следующих практических занятиях этот проект будет расширяться:
-          появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-          БЭМ-структура и адаптивная версия сайта.
-        </p>
+      <aside class="care-note">
+        <div>
+          <h2 class="care-note__title">Не знаете, что выбрать?</h2>
+          <p>Для комнаты с небольшим количеством света подойдут сансевиерия или фикус. Для светлой просторной комнаты можно выбрать монстеру.</p>
+        </div>
+        <a class="button" href="contacts.html#feedback">Задать вопрос</a>
       </aside>
+      <section class="section reviews">
+        <p class="section__label">Отзывы</p>
+        <h2 class="section__title">Что говорят покупатели</h2>
+        <div class="reviews__list">
+          <article class="review">
+            <h3 class="review__author">Мария</h3>
+            <p>Монстера приехала аккуратно упакованной. Памятка по уходу помогла выбрать для неё подходящее место.</p>
+          </article>
+          <article class="review">
+            <h3 class="review__author">Иван</h3>
+            <p>Заказывал кактус для рабочего стола. Растение небольшое и выглядит точно как на фотографии.</p>
+          </article>
+        </div>
+      </section>
     </main>
-    <footer id="contacts">
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    <footer class="site-footer" id="contacts">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__title">Зелёный дом</p>
+          <p>Учебный интернет-магазин комнатных растений.</p>
+        </div>
+        <div>
+          <p>
+            <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+          <p>
+            <strong>E-mail:</strong> hello@green-home.example</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Навигация по главной странице">
+          <a href="#advantages">Преимущества</a>
+          <a href="#popular">Популярные растения</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <p class="site-footer__copyright">© 2026 Учебный проект. Полянский Алексей, ЭФБО-01-25.</p>
     </footer>
+    <a class="back-to-top" href="#top">Наверх</a>
+    <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+      <div class="order-dialog__heading">
+        <h2 id="dialog-title">Быстрая заявка</h2>
+        <button class="order-dialog__close js-close-dialog" type="button" aria-label="Закрыть окно">×</button>
+      </div>
+      <form class="order-form js-demo-form" action="#" method="post" data-success="dialog-success" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="dialog-name">Имя</label>
+          <input class="order-form__input" id="dialog-name" name="name" type="text" minlength="2" autocomplete="given-name" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="dialog-email">E-mail</label>
+          <input class="order-form__input" id="dialog-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="dialog-phone">Телефон</label>
+          <input class="order-form__input" id="dialog-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" title="Формат: +7 (900) 000-00-00" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="dialog-product">Товар</label>
+          <select class="order-form__input" id="dialog-product" name="product" required>
+            <option value="">Выберите растение</option>
+            <option value="Монстера">Монстера</option>
+            <option value="Фикус">Фикус</option>
+            <option value="Сансевиерия">Сансевиерия</option>
+            <option value="Кактус">Кактус</option>
+          </select>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="dialog-comment">Комментарий</label>
+          <textarea class="order-form__input" id="dialog-comment" name="comment" rows="3"></textarea>
+        </div>
+        <label class="order-form__agreement">
+          <input name="agreement" type="checkbox" required> Я согласен на обработку данных</label>
+        <div class="order-form__actions">
+          <button class="button" type="submit">Отправить</button>
+          <button class="button button--secondary js-close-dialog" type="button">Отмена</button>
+        </div>
+      </form>
+      <p class="success-message" id="dialog-success" role="status" hidden>Заявка отправлена. Мы скоро свяжемся с вами.</p>
+    </dialog>
   </body>
 </html>

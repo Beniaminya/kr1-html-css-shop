@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог комнатных растений интернет-магазина Зелёный дом.">
+    <title>Каталог растений — Зелёный дом</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Зелёный дом</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">Товар</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <span>Каталог</span>
+      </nav>
+      <section class="page-intro">
+        <p class="section__label">Каталог</p>
+        <h1>Комнатные растения</h1>
+        <p>Четыре неприхотливых растения для дома, рабочего стола или подарка.</p>
+      </section>
+      <div class="catalog-layout">
+        <aside class="filters">
+          <h2 class="filters__title">Категории</h2>
+          <ul class="filters__list">
+            <li>
+              <a href="#large">Крупные растения</a>
+            </li>
+            <li>
+              <a href="#easy-care">Неприхотливые</a>
+            </li>
+            <li>
+              <a href="#small">Для рабочего стола</a>
+            </li>
+          </ul>
+          <p class="filters__note">Фильтр показан как статический макет.</p>
+          <button class="button" type="button" disabled>Применить фильтр</button>
+        </aside>
+        <section class="catalog" aria-labelledby="catalog-title">
+          <h2 id="catalog-title">Все растения</h2>
+          <div class="catalog__grid">
+            <article class="product-card product-card--hit" id="large">
+              <span class="product-card__badge">Хит</span>
+              <img class="product-card__image" src="images/monstera.jpg" alt="Монстера в бежевом горшке">
+              <div class="product-card__content">
+                <p class="product-card__category">Крупные растения</p>
+                <h3 class="product-card__title">Монстера</h3>
+                <p class="product-card__description">Любит рассеянный свет и умеренный полив.</p>
+                <p class="product-card__price">2 400 руб.</p>
+                <div class="product-card__actions">
+                  <a class="button button--secondary" href="product.html">Подробнее</a>
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <span class="product-card__badge">Новинка</span>
+              <img class="product-card__image" src="images/ficus.jpg" alt="Фикус в терракотовом горшке">
+              <div class="product-card__content">
+                <p class="product-card__category">Декоративно-лиственные</p>
+                <h3 class="product-card__title">Фикус</h3>
+                <p class="product-card__description">Подходит для светлого места без сквозняков.</p>
+                <p class="product-card__price">1 800 руб.</p>
+                <div class="product-card__actions">
+                  <a class="button button--secondary" href="product.html">Подробнее</a>
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="easy-care">
+              <img class="product-card__image" src="images/sansevieria.jpg" alt="Сансевиерия в светлом горшке">
+              <div class="product-card__content">
+                <p class="product-card__category">Неприхотливые</p>
+                <h3 class="product-card__title">Сансевиерия</h3>
+                <p class="product-card__description">Хорошо переносит редкий полив и полутень.</p>
+                <p class="product-card__price">1 500 руб.</p>
+                <div class="product-card__actions">
+                  <a class="button button--secondary" href="product.html">Подробнее</a>
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" id="small">
+              <span class="product-card__badge">Скидка</span>
+              <img class="product-card__image" src="images/cactus.jpg" alt="Кактус в песочном горшке">
+              <div class="product-card__content">
+                <p class="product-card__category">Для рабочего стола</p>
+                <h3 class="product-card__title">Кактус</h3>
+                <p class="product-card__description">Компактное растение для солнечного места.</p>
+                <p class="product-card__price">
+                  <span class="product-card__old-price">1 100 руб.</span> 900 руб.</p>
+                <div class="product-card__actions">
+                  <a class="button button--secondary" href="product.html">Подробнее</a>
+                  <a class="button" href="order.html">Заказать</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__title">Зелёный дом</p>
+          <p>Учебный интернет-магазин комнатных растений.</p>
+        </div>
+        <div>
+          <p>
+            <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+          <p>
+            <strong>E-mail:</strong> hello@green-home.example</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="index.html#popular">Популярные растения</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <p class="site-footer__copyright">© 2026 Учебный проект. Полянский Алексей, ЭФБО-01-25.</p>
+    </footer>
+    <a class="back-to-top" href="#top">Наверх</a>
+  </body>
+</html>

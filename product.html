@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Описание и характеристики монстеры в магазине Зелёный дом.">
+    <title>Монстера — Зелёный дом</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Зелёный дом</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <span>Монстера</span>
+      </nav>
+      <article class="product">
+        <div class="product__image-wrap">
+          <span class="product-card__badge">Хит</span>
+          <img class="product__image" src="images/monstera.jpg" alt="Монстера в бежевом горшке">
+        </div>
+        <div class="product__info">
+          <p class="section__label">Крупные растения</p>
+          <h1>Монстера</h1>
+          <p class="product__description">Монстера — комнатное растение с крупными резными листьями. Она подойдёт для гостиной или просторной спальни с рассеянным светом.</p>
+          <p class="product__availability">В наличии</p>
+          <p class="product__price">2 400 руб.</p>
+          <div class="product__actions">
+            <a class="button" href="order.html">Оформить заявку</a>
+            <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+          </div>
+        </div>
+      </article>
+      <section class="section" id="characteristics">
+        <h2 class="section__title">Характеристики</h2>
+        <div class="table-wrap">
+          <table class="product-table">
+            <caption>Основные характеристики монстеры</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Высота</th>
+                <td>около 70 см</td>
+              </tr>
+              <tr>
+                <th scope="row">Диаметр горшка</th>
+                <td>21 см</td>
+              </tr>
+              <tr>
+                <th scope="row">Освещение</th>
+                <td>яркий рассеянный свет</td>
+              </tr>
+              <tr>
+                <th scope="row">Полив</th>
+                <td>1–2 раза в неделю</td>
+              </tr>
+              <tr>
+                <th scope="row">Сложность ухода</th>
+                <td>средняя</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <aside class="care-note">
+        <div>
+          <h2 class="care-note__title">Совет по уходу</h2>
+          <p>Протирайте листья влажной тканью и не ставьте растение под прямые солнечные лучи.</p>
+        </div>
+        <a class="button" href="contacts.html#feedback">Задать вопрос</a>
+      </aside>
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <p class="site-footer__title">Зелёный дом</p>
+          <p>Учебный интернет-магазин комнатных растений.</p>
+        </div>
+        <div>
+          <p>
+            <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+          <p>
+            <strong>E-mail:</strong> hello@green-home.example</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Дополнительная навигация">
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="index.html#popular">Популярные растения</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+      </div>
+      <p class="site-footer__copyright">© 2026 Учебный проект. Полянский Алексей, ЭФБО-01-25.</p>
+    </footer>
+    <a class="back-to-top" href="#top">Наверх</a>
+  </body>
+</html>
